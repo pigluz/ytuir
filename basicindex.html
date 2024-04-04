@@ -4,23 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ytuir.</title>
+    <style>
+        #symbols_container {
+            font-size: 40px;
+        }
+        #symbol1 {
+            color: black;
+        }
+        #symbol2 {
+            color: rgba(0, 0, 0, 0.527);
+        }
+        #symbol3 {
+            color: rgba(0, 0, 0, 0.205);
+        }
+        #symbol4 {
+            color: rgba(0, 0, 0, 0.055);
+        }
+
+        #hero_container {
+            width: 50%;
+            margin: auto;
+        }
+
+        #introduction_container button{
+            margin-left: 45%;
+            padding: 5px 15px;
+        }
+
+        #game_container {
+            height: 200px;
+        }
+
+        #game_container input {
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #game_container button{
+            padding: 15px 35px;
+        }
+
+    </style>
 </head>
 <body>
     <div id="hero_container">
         <h1>ytuir.</h1>
         <hr>
-        <div id="symbols_container">
-            <span id="symbol1"> </span>
-            <span id="symbol2"> </span>
-            <span id="symbol3"> </span>
-            <span id="symbol4"> </span>
-        </div>
-        <input id="userInput" style="display: none;">
-        <br>
-        <button id="startButton" onclick="startGame()">Start</button>
+        <div id="introduction_container">
+            <h2>Welcome!</h2>
+            <p>In this game, you have to enter as many corresponding symbols as fast as possible until the time runs out!<br>Can you do it?</p>
+            <p>
+                If you see specific symbol, press:<br>
+                <span> ↑ &nbsp;&nbsp;- W </span><br>
+                <span> ↓ &nbsp;&nbsp;- S </span><br>
+                <span> ← - A </span><br>
+                <span> → - D </span><br>
+            </p>
 
-        <p id="pointsText" style="display: none;">points: <span id="pointsValue">0</span></p>
-        <p id="highscore">your highscore: <span id="highscoreValue">0</span> </p> 
+            <button onclick="introductionOK()">Ok!</button>
+        </div>
+
+        <div id="game_container" style="display: none;">
+            <div id="symbols_container">
+                <span id="symbol1"> </span>
+                <span id="symbol2"> </span>
+                <span id="symbol3"> </span>
+                <span id="symbol4"> </span>
+            </div>
+            <input id="userInput" style="display: none;">
+            <br>
+            <button id="startButton" onclick="startGame()">Start</button>
+    
+            <div id="timer_container">
+                <p id="timerText" style="display: none;">Time left: <b><span id="time"></span></b> seconds</p>
+            </div>
+    
+            <p id="pointsText" style="display: none;">Points: <b><span id="pointsValue">0</span></b></p>
+            <p id="highscore" style="display: none;">Your highscore: <b><span id="highscoreValue">0</span></b> </p> 
+            <p id="highscoreNEW"></p>
+        </div>
+
     </div> 
     <script src="basicjs.js"></script>
 </body>
