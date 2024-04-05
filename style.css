@@ -1,0 +1,55 @@
+       * {
+            font-size: 40px;
+        }
+        #symbols_container span {
+            font-size: 80px !important; 
+        }
+        #symbol1 {
+            color: black;
+        }
+        #symbol2 {
+            color: rgba(0, 0, 0, 0.527);
+        }
+        #symbol3 {
+            color: rgba(0, 0, 0, 0.205);
+        }
+        #symbol4 {
+            color: rgba(0, 0, 0, 0.055);
+        }
+
+        #hero_container {
+            width: 50%;
+            margin: auto;
+        }
+
+        #introduction_container button{
+            margin-left: 45%;
+            padding: 15px 35px;
+        }
+
+        #game_container {
+            height: 200px;
+			display:none;
+        }
+
+        #userInput {
+			display: none;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+        #game_container button{
+            padding: 15px 35px;
+        }
+		#header_text {
+			font-size: 60px !important;
+		}
+		#timerText {
+			display: none;
+		}
+		#points_container {
+			display: none;
+		}
+		
