@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ytuir.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hero_container">
+
+      <h1>ytuir.</h1>
+      <hr />
+
+      <div id="intro_container">
+        <h3>Welcome!</h3>
+        <p>
+          In <b>ytuir.</b>, you have to press correct keys quickly until the
+          time runs out.
+        </p>
+        <p>
+          The tutorial is easy; you have 10 seconds and you will see 4 random
+          symbols on the screen.<br />
+          Those symbols are the equivalent of your keyboard keys, and here's the
+          list of them:
+        </p>
+
+        <table>
+          <tr>
+            <td>↑ = W</td>
+            <td>← = A</td>
+          </tr>
+          <tr>
+            <td>↓ = S</td>
+            <td>→ = D</td>
+          </tr>
+        </table>
+
+        <p>Easy right?</p>
+        <button onclick="introAcknowledged()">Yes!</button>
+      </div>
+
+      <div id="pre_game">
+        <button onclick="gameStart()">Start!</button>
+      </div>
+
+      <div id="game_container">
+
+        <span id="timer"></span>
+
+        <div id="symbols_area">
+          <span id="span_symbol_one"></span>
+          <span id="span_symbol_two"></span>
+          <span id="span_symbol_three"></span>
+          <span id="span_symbol_four"></span>
+        </div>
+
+        <div id="points_container">
+          <p>
+            Points: <b><span id="pointsValue"></span></b>
+          </p>
+          <p>
+            Current highscore: <b><span id="highscoreValue"></span></b>
+          </p>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
