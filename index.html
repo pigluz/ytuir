@@ -27,12 +27,12 @@
 
         <table>
           <tr>
-            <td>↑ = W</td>
-            <td>← = A</td>
+            <td>↑ ─ W</td>
+            <td>← ─ A</td>
           </tr>
           <tr>
-            <td>↓ = S</td>
-            <td>→ = D</td>
+            <td>↓ ─ S</td>
+            <td>→ ─ D</td>
           </tr>
         </table>
 
@@ -46,14 +46,18 @@
 
       <div id="game_container">
 
-        <span id="timer"></span>
+        <div id="ongoing_game">
+          <span id="timer">10</span>
 
-        <div id="symbols_area">
-          <span id="span_symbol_one"></span>
-          <span id="span_symbol_two"></span>
-          <span id="span_symbol_three"></span>
-          <span id="span_symbol_four"></span>
+          <div id="symbols_area">
+            <span id="span_symbol_one">1</span>
+            <span id="span_symbol_two">2</span>
+            <span id="span_symbol_three">3</span>
+            <span id="span_symbol_four">4</span>
+          </div>
+          <input type="text" id="user_input">
         </div>
+
 
         <div id="points_container">
           <p>
@@ -61,6 +65,7 @@
           </p>
           <p>
             Current highscore: <b><span id="highscoreValue"></span></b>
+            <!--USE .childAppend() function in js to create an element when the highscore is beaten.-->
           </p>
         </div>
 
