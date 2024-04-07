@@ -5,7 +5,6 @@
 }
 
 #intro_container {
-    /* display: none; */
 }
 
 #intro_container table {
@@ -29,19 +28,20 @@ button {
         background-color: rgb(241, 241, 241);
     }
 
-#pre_game {
-    /* display: none; */
-}
-
 #game_container {
-    /* display: none; */
+    display: none;
 }
 
-#symbols_area {
+.symbol {
     font-size: 80px;
 }
-#symbols_area span {
-    margin: 0 30px 0 0;
+
+#symbols_area table{
+    width: 100%;
+}
+
+#symbols_area td {
+    width: 230px !important;
 }
     #span_symbol_two {
         color: rgb(139, 139, 139);
@@ -54,10 +54,14 @@ button {
     }
     
 #ongoing_game {
-    width: fit-content;
+    display: block;
+    width: 100%;
     text-align: center;
 }
 
+#points_container {
+    display: none;
+}
 input {
     border-radius: 5px;
     border: 1.5px solid black;
