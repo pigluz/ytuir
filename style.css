@@ -1,55 +1,73 @@
-       * {
-            font-size: 40px;
-        }
-        #symbols_container span {
-            font-size: 80px !important; 
-        }
-        #symbol1 {
-            color: black;
-        }
-        #symbol2 {
-            color: rgba(0, 0, 0, 0.527);
-        }
-        #symbol3 {
-            color: rgba(0, 0, 0, 0.205);
-        }
-        #symbol4 {
-            color: rgba(0, 0, 0, 0.055);
-        }
+#hero_container {
+    margin: auto;
+    width: 50%;
+    font-size: 30px;
+}
 
-        #hero_container {
-            width: 50%;
-            margin: auto;
-        }
+#intro_container {
+}
 
-        #introduction_container button{
-            margin-left: 45%;
-            padding: 15px 35px;
-        }
+#intro_container table {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
 
-        #game_container {
-            height: 200px;
-			display:none;
-        }
+button {
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: rgb(250, 250, 250);
+    transition:ease 0.1s;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+    button:hover {
+        transition:ease 0.1s;
+        padding: 10px 25px;
+        font-size: 21px;
+        background-color: rgb(241, 241, 241);
+    }
 
-        #userInput {
-			display: none;
-            margin-top: 10px;
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid black;
+#game_container {
+    display: none;
+}
 
-        }
-        #game_container button{
-            padding: 15px 35px;
-        }
-		#header_text {
-			font-size: 60px !important;
-		}
-		#timerText {
-			display: none;
-		}
-		#points_container {
-			display: none;
-		}
-		
+.symbol {
+    font-size: 80px;
+}
+
+#symbols_area table{
+    width: 100%;
+}
+
+#symbols_area td {
+    width: 230px !important;
+}
+    #span_symbol_two {
+        color: rgb(139, 139, 139);
+    }
+    #span_symbol_three {
+        color: rgb(182, 180, 180);
+    }
+    #span_symbol_four {
+        color: rgb(238, 238, 238);
+    }
+    
+#ongoing_game {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#points_container {
+    display: none;
+}
+input {
+    border-radius: 5px;
+    border: 1.5px solid black;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid black;
+  }
